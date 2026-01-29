@@ -7,11 +7,11 @@ RUN apk update && apk add --no-cache curl bash
 RUN curl -L https://github.com/cloudflare/cloudflare-linux-amd64.bin -o /usr/local/bin/cloudflared \
     && chmod +x /usr/local/bin/cloudflared
 
-# RAILWAY VARIABLES မှ PORT များကို EXPOSE လုပ်ခြင်း
+# PORT များကို EXPOSE လုပ်ခြင်း
 EXPOSE 2053
 EXPOSE 443
 EXPOSE 80
-EXPOSE 8080
+EXPOSE 47998
 
 # TUNNEL နှင့် PANEL ကို တစ်ပြိုင်နက် မောင်းနှင်ခြင်း
 # ဆရာ့ရဲ့ TOKEN ကို ဒီမှာ အောက်ပါအတိုင်း ထည့်ပေးပါ
