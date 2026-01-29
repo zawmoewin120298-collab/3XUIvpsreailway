@@ -8,7 +8,7 @@ RUN curl -L https://github.com/cloudflare/cloudflare-linux-amd64.bin -o /usr/loc
     && chmod +x /usr/local/bin/cloudflared
 
 # RAILWAY VARIABLES မှ PORT များကို EXPOSE လုပ်ခြင်း
-EXPOSE 2053
+EXPOSE 80
 EXPOSE 443
 
 # TUNNEL နှင့် PANEL ကို တစ်ပြိုင်နက် မောင်းနှင်ခြင်း
